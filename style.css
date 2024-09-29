@@ -1,0 +1,110 @@
+*{
+    margin: 0px;
+    padding: 0px;
+   
+}
+
+.container{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+.wrapper{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+
+}
+
+.front, .back{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.front{
+    z-index: 1;
+    height: 100%;
+    transform: translateZ(-10px) scale(2);
+}
+.back{
+    height: 100vh;
+    transform: translateZ(-40px) scale(6);
+    overflow-y: hidden;
+}
+
+.head{
+    position: relative;
+    top: -300px;
+    text-transform: uppercase;
+    background-color: azure;
+    font-size: 40px;
+    transform: translateZ(-10px) scale(2);
+}
+
+.section1{
+    max-height: 70rem;
+    overflow-y: hidden;
+    position: relative;
+}
+
+.para1{
+    background-color: black;
+    color: aliceblue;
+    padding: 2rem 6rem;
+    text-align: center;
+}
+
+.hh1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 40px;
+}
+
+.text1{
+    margin: 30px auto;
+}
+
+.bg{
+    position: relative;
+    height: 70vh;
+    background-attachment: fixed;
+    object-fit: cover;
+    width: 100%;
+    background-size: cover;
+    
+}
+
+.bg1{
+    background-image: url(/1.jpg); 
+}
+.bg2{
+    background-image: url(2.jpg); 
+}
+.bg3{
+    background-image: url(3.jpg); 
+}
+.bg4{
+    background-image: url(4.jpg); 
+}
+.bg5{
+    background-image: url(5.jpg); 
+}
+
+.hhh1{
+    position: absolute;
+    background-color: aliceblue;
+    text-transform: uppercase;
+    font-size: 2rem;
+    top: 12rem;
+    left: 30rem;
+}
+
+
+
